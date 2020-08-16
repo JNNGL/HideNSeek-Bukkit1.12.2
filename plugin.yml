@@ -1,0 +1,138 @@
+name: HideNSeek
+main: com.jnngl.plugin.Plugin
+version: 1.0.0
+author: JNNGL
+
+commands:
+   hnsReset:
+      description: Command to reset HideNSeek config file.
+      usage: /hnsReset
+   setupHubRoom:
+      description: Command to setup hub room to Hide N Seek game.
+      usage: /setupHubRoom [x] [y] [z] OR /setupHubRoom
+   setupSeekerRoom:
+      description: Command to setup room, when seeker waiting.
+      usage: /setupSeekerRoom [x] [y] [z] OR /setupSeekerRoom
+   setupStart:
+      description: Command to setup start of Hide N Seek map.
+      usage: /setupStart [x] [y] [z] OR /setupStart
+   addKitElement:
+      description: Command to add elements into kit. If you want to add item, hold it in your main hand and type /addKitElement item
+      usage: /addKitElement item OR /addKitElement effect [type] [duration] [amplifier]
+   removeKitElement:
+      description: Command to remove element from kit. If you want to remove item, hold it in your main hand and type /removeKitElement item
+      usage: /removeKitElement item OR /removeKitElement effect [type] [duration] [amplifier]
+   clearKit:
+      description: Command to clear all ellements from kit.
+      usage: /clearKit items OR /clearKit effects
+   applyKit:
+      description: Command to apply and save kit.
+      usage: /applyKit [kitName]
+   editKit:
+      description: Command to edit kit. !!! WILL EARSE UNSAVED KIT !!!
+      usage: /editKit [kitName]
+   deleteKit:
+      description: Command to delete kit.
+      usage: /deleteKit [kitName]
+   getKit:
+      description: Command to get kit.
+      usage: /getKit [kitName]
+   kitList:
+      description: Returns kit list.
+      usage: /kitList
+   setDefaultKit:
+      description: Command to setup default kit
+      usage: /setDefaultKit [kitName]
+      
+   setDisplayRoom:
+      description: Command to set 'displayRoom' value. Boolean.
+      usage: /setDisplayRoom true OR /setDisplayRoom false
+   setDisplayRoomAt:
+      description: Command to set 'displayRoomAt' value. Integer.
+      usage: /setDisplayRoomAt [second]
+   setHideTime: 
+      description: Command to set 'hideTime' value. Integer.
+      usage: /setHideTime [seconds]
+   setSeekTime:
+      description: Command to set 'seekTime' value. Integer.
+      usage: /setSeekTime [seconds]
+   setMinPlayerCount: 
+      description: Command to set 'minPlayerCount' value. Integer.
+      usage: /setMinPlayerCount [integer]
+   setWaitTimeBeforeStart:
+      description: Command to set 'waitTimeBeforeStart' value. Integer.
+      usage: /setWaitTimeBeforeStart [seconds]
+   setMaxPlayerCount: 
+      description: Command to set 'maxPlayerCount' value. Integer.
+      usage: /setMaxPlayerCount [integer]
+   setSeekersAtStart:
+      description: Command to set 'seekersAtStart' value. Integer.
+      usage: /setSeekersAtStart [integer]
+   setSeekersBoundAtStart:
+      description: Command to set 'seekersBoundAtStart' value. Integer. Normally 2. Don't edit this value, if you don't know what is this!
+      usage: /setSeekersBoundAtStart [integer]
+   setWorld:
+      description: Command to set 'world' value. String.
+      usage: /setWorld [world]
+   addMessageAt:
+      description: Command to add message at selected time. To use colors read project page.
+      usage: /addMessageAt [second] [message]
+   removeMessageAt:
+      descriptioin: Command to remove message at selected time.
+      usage: /removeMessageAt [second]
+   setEnoughToPlay:
+      description: Command to set 'enoughToPlay' value. Integer.
+      usage: /setEnoughToPlay [integer]
+   setMessage:
+      description: Command to set in-game info messages. For more information view project page. Invalid named messages will be ignored!
+      usage: /setMessage [name] [message]
+      
+   saveData:
+      description: Command to save data.
+      usage: /saveData OR /saveData [player]
+   loadData:
+      description: Command to load saved data.
+      usage: /loadData OR /loadData [player]
+   
+   getRoom:
+      description: Command to test rooms
+      usage: /getRoom
+   setRoom:
+      description: Command to set room
+      usage: /setRoom [name]
+   delRoom:
+      description: Command to delete room
+      usage: /delRoom [name]
+      
+   tpHub:
+      description: Command to tp to hub
+      usage: /tphub
+   tpSeekRoom:
+      description: Command to tp to seeker room
+      usage: /tpseekroom
+   tpStart:
+      description: Command to tp to map start
+      usage: /tpstart
+      
+   hideAndSeek:
+      description: Main command to join Hide n Seek game
+      usage: /hideAndSeek
+   stopGame:
+      description: Command to stop game.
+      usage: /stopGame
+   leaveHideAndSeek:
+      description: Command to leave game.
+      usage: /leaveHideAndSeek
+      
+   loadAllData:
+      description: Restores all data to all players. Use this command when game stopped with errors or server reloaded
+      usage: /loadAllData
+   enableSelection:
+      description: Command to enable area selection with golden pickaxe
+      usage: /enableSelection
+   disableSelection:
+      description: Command to disable area selection with golden pickaxe
+      usage: /disableSelection
+   toggleSelection:
+      description: Command to toggle area selection with golden pickaxe
+      usage: /toggleSelection

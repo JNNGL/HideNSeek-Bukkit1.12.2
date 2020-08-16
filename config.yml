@@ -1,0 +1,119 @@
+kit:
+  jumper:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+          PROTECTION_FALL: 4
+    - ==: org.bukkit.inventory.ItemStack
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: LEATHER_ARMOR
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 2
+          DURABILITY: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: FIREWORK
+      amount: 64
+    - ==: org.bukkit.inventory.ItemStack
+      type: GOLD_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          KNOCKBACK: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: GRILLED_PORK
+      amount: 5
+    effects:
+    - ==: PotionEffect
+      effect: 8
+      duration: 99999
+      amplifier: 10
+      ambient: true
+      has-particles: false
+  seeker:
+    items:
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_ENVIRONMENTAL: 3
+          DURABILITY: 3
+          THORNS: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_PROJECTILE: 3
+          DURABILITY: 3
+          THORNS: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          PROTECTION_FIRE: 3
+          DURABILITY: 3
+          THORNS: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          DURABILITY: 3
+          PROTECTION_EXPLOSIONS: 3
+          THORNS: 3
+    - ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          FIRE_ASPECT: 2
+          DAMAGE_UNDEAD: 3
+          KNOCKBACK: 2
+    - ==: org.bukkit.inventory.ItemStack
+      type: BOW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        enchants:
+          ARROW_DAMAGE: 1
+          ARROW_KNOCKBACK: 2
+          ARROW_FIRE: 1
+          DURABILITY: 1
+          ARROW_INFINITE: 1
+    - ==: org.bukkit.inventory.ItemStack
+      type: ARROW
+    effects:
+    - ==: PotionEffect
+      effect: 8
+      duration: 99999
+      amplifier: 11
+      ambient: true
+      has-particles: true
+    - ==: PotionEffect
+      effect: 1
+      duration: 99999
+      amplifier: 4
+      ambient: true
+      has-particles: true
+    - ==: PotionEffect
+      effect: 24
+      duration: 99999
+      amplifier: 255
+      ambient: true
+      has-particles: true
